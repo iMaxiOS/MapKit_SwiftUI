@@ -11,15 +11,21 @@
 		AC05E71B25A317000069AADB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC05E71A25A317000069AADB /* ContentView.swift */; };
 		AC05E71D25A317010069AADB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC05E71C25A317010069AADB /* Assets.xcassets */; };
 		AC05E72025A317010069AADB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC05E71F25A317010069AADB /* Preview Assets.xcassets */; };
+		AC05E72B25A3178C0069AADB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC05E72A25A3178C0069AADB /* Home.swift */; };
+		AC05E72E25A318530069AADB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC05E72D25A318530069AADB /* MapView.swift */; };
+		AC05E73625A31AB50069AADB /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC05E73525A31AB50069AADB /* MapViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC05E71525A317000069AADB /* MapKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC05E71525A317000069AADB /* MapKit_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapKit_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC05E71825A317000069AADB /* MapKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitApp.swift; sourceTree = "<group>"; };
 		AC05E71A25A317000069AADB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC05E71C25A317010069AADB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC05E71F25A317010069AADB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC05E72125A317010069AADB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC05E72A25A3178C0069AADB /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		AC05E72D25A318530069AADB /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		AC05E73525A31AB50069AADB /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +50,7 @@
 		AC05E71625A317000069AADB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC05E71525A317000069AADB /* MapKit.app */,
+				AC05E71525A317000069AADB /* MapKit_SwiftUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,6 +58,8 @@
 		AC05E71725A317000069AADB /* MapKit */ = {
 			isa = PBXGroup;
 			children = (
+				AC05E72925A317810069AADB /* ViewModel */,
+				AC05E72825A3177C0069AADB /* View */,
 				AC05E71825A317000069AADB /* MapKitApp.swift */,
 				AC05E71A25A317000069AADB /* ContentView.swift */,
 				AC05E71C25A317010069AADB /* Assets.xcassets */,
@@ -69,12 +77,29 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		AC05E72825A3177C0069AADB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC05E72A25A3178C0069AADB /* Home.swift */,
+				AC05E72D25A318530069AADB /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC05E72925A317810069AADB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC05E73525A31AB50069AADB /* MapViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AC05E71425A317000069AADB /* MapKit */ = {
+		AC05E71425A317000069AADB /* MapKit_SwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC05E72425A317010069AADB /* Build configuration list for PBXNativeTarget "MapKit" */;
+			buildConfigurationList = AC05E72425A317010069AADB /* Build configuration list for PBXNativeTarget "MapKit_SwiftUI" */;
 			buildPhases = (
 				AC05E71125A317000069AADB /* Sources */,
 				AC05E71225A317000069AADB /* Frameworks */,
@@ -84,9 +109,9 @@
 			);
 			dependencies = (
 			);
-			name = MapKit;
+			name = MapKit_SwiftUI;
 			productName = MapKit;
-			productReference = AC05E71525A317000069AADB /* MapKit.app */;
+			productReference = AC05E71525A317000069AADB /* MapKit_SwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +128,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AC05E71025A317000069AADB /* Build configuration list for PBXProject "MapKit" */;
+			buildConfigurationList = AC05E71025A317000069AADB /* Build configuration list for PBXProject "MapKit_SwiftUI" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,7 +141,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC05E71425A317000069AADB /* MapKit */,
+				AC05E71425A317000069AADB /* MapKit_SwiftUI */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +164,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC05E71B25A317000069AADB /* ContentView.swift in Sources */,
+				AC05E73625A31AB50069AADB /* MapViewModel.swift in Sources */,
+				AC05E72E25A318530069AADB /* MapView.swift in Sources */,
+				AC05E72B25A3178C0069AADB /* Home.swift in Sources */,
 				AC05E71925A317000069AADB /* MapKitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +297,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MapKit/Preview Content\"";
-				DEVELOPMENT_TEAM = R4XB56HC9M;
+				DEVELOPMENT_TEAM = 224SJKKLQ3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MapKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -289,9 +317,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MapKit/Preview Content\"";
-				DEVELOPMENT_TEAM = R4XB56HC9M;
+				DEVELOPMENT_TEAM = 224SJKKLQ3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MapKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -301,6 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = iMaxiOS.MapKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -309,7 +339,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AC05E71025A317000069AADB /* Build configuration list for PBXProject "MapKit" */ = {
+		AC05E71025A317000069AADB /* Build configuration list for PBXProject "MapKit_SwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC05E72225A317010069AADB /* Debug */,
@@ -318,7 +348,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC05E72425A317010069AADB /* Build configuration list for PBXNativeTarget "MapKit" */ = {
+		AC05E72425A317010069AADB /* Build configuration list for PBXNativeTarget "MapKit_SwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC05E72525A317010069AADB /* Debug */,
